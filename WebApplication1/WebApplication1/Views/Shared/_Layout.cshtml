@@ -1,0 +1,192 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Responsive sidebar template with sliding effect and dropdown menu based on bootstrap 3">
+    <title>Sidebar template</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link href="~/css/Timeline.css" rel="stylesheet" />
+    <link href="~/css/bar.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="page-wrapper chiller-theme toggled">
+        <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
+            <i class="fas fa-bars"></i>
+        </a>
+        <nav id="sidebar" class="sidebar-wrapper">
+            <div class="sidebar-content">
+                <div class="sidebar-brand">
+                    <a href="/Default">Kişisel Blog</a>
+                    <div id="close-sidebar">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+                <div class="sidebar-header">
+                    <div class="user-pic">
+                        <img class="img-responsive img-rounded" src="https://scontent.fist4-1.fna.fbcdn.net/v/t1.0-9/37258203_1768567783256773_5758553083730722816_n.jpg?_nc_cat=106&_nc_ht=scontent.fist4-1.fna&oh=6366532912b258e6e27fd49ad863ba49&oe=5D43ED47"
+                             alt="User picture">
+                    </div>
+                    <div class="user-info">
+                        <span class="user-name">
+                            Burak
+                            <strong>ÖZEN</strong>
+                        </span>
+                        <span class="user-role">WEB Developer</span>
+                        <span class="user-status">
+                            <i class="fa fa-circle"></i>
+                            <span>Wissen Akademie</span>
+                        </span>
+                    </div>
+                </div>
+                <!-- sidebar-header  -->
+                <div class="sidebar-search">
+                    <div>
+                        <div class="input-group">
+                            <input type="text" class="form-control search-menu" placeholder="Search...">
+                            <div class="input-group-append">
+                                <span class="input-group-text">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- sidebar-search  -->
+                <div class="sidebar-menu">
+                    <ul>
+                        <li class="header-menu">
+                            <span>General</span>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="fa fa-address-card"></i>
+                                <span>Bilgiler</span>
+                                <span class="badge badge-pill badge-warning">2019</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            Kişisel Bilgiler
+                                            <span class="badge badge-pill badge-success"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Eğitim Bilgileri</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Hobi ve Topluluklar</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="fa fa-bars"></i>
+                                <span>Projeler</span>
+                                <span class="badge badge-pill badge-danger">3</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            WEB Projeleri
+
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Otomasyon</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Girişimcilik</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="fa fa-camera-retro"></i>
+                                <span>Seyahatler</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="#">Ankara</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">İzmir</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Kapadokya</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="header-menu">
+                            <span>Diğer</span>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-search"></i>
+                                <span>Freelance</span>
+                                <span class="badge badge-pill badge-primary">Teklif</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-id-badge"></i>
+                                <span>Referanslar</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- sidebar-menu  -->
+            </div>
+            <!-- sidebar-content  -->
+            @*<div class="sidebar-footer">
+                    <a href="#">
+                        <i class="fa fa-bell"></i>
+                        <span class="badge badge-pill badge-warning notification">0</span>
+                    </a>
+
+
+                    <a href="#">
+                        <i class="fa fa-power-off"></i>
+                    </a>
+                </div>*@
+        </nav>
+
+
+        <main class="page-content sidebar-content">
+            <div class="container-fluid">
+                @RenderBody()
+            </div>
+        </main>
+        <!-- page-content" -->
+    </div>
+
+
+    <div>
+    </div>
+    <script src="~/scripts/bar.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+</body>
+</html>
