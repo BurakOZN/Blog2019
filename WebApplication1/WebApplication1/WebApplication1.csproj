@@ -89,6 +89,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\bar.css" />
+    <Content Include="css\slider.css" />
+    <Content Include="css\profile.css" />
     <Content Include="css\Timeline.css" />
     <Content Include="Global.asax" />
     <Content Include="scripts\bar.js" />
@@ -96,6 +98,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\BilgilerController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -109,6 +112,8 @@
     <None Include="packages.config" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Default\Index.cshtml" />
+    <Content Include="Views\Bilgiler\Index.cshtml" />
+    <Content Include="Views\Bilgiler\Egitim.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

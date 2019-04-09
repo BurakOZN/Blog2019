@@ -6,10 +6,15 @@ using System.Web.Mvc;
 
 namespace WebApplication1.Controllers
 {
-    public class DefaultController : Controller
+    public class BilgilerController : Controller
     {
-        // GET: Default
+        // GET: Bilgiler
         public ActionResult Index()
+        {
+            return View();
+        }
+
+        public ActionResult Egitim()
         {
             return View();
         }
